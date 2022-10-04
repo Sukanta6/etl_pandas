@@ -18,7 +18,7 @@ lst = [['AAA',2019,15],['BBB',2019,16],['BBB',2020,22],['AAA',2020,-20],['CCC',2
 df = pd.DataFrame(lst,columns = ['name','year','val'])
 
 
-#df.loc[df['name'].isin(df.loc[df['val'].lt(0), 'name']), 'val'] = 1
+df.loc[df['name'].isin(df.loc[df['val'].lt(0), 'name']), 'val'] = 1
 
 df.loc[df['val'].lt(0).groupby(df['name']).transform('any'), 'val'] = 1
 
