@@ -1,7 +1,7 @@
 
 import pandas as pd
 import os
-low_memory=False
+#low_memory=False
 
 df = pd.DataFrame({"A":[5, 3, 6, 4],
                    "B":[11, 2, 4, 3],
