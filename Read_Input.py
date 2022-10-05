@@ -9,7 +9,7 @@ df = pd.DataFrame({"A":[5, 3, 6, 4],
                    "D":[5, 4, 2, 8]})
 
 
-# Cummulative sum
+# Cumulative sum
 df1 = df.cumsum(axis = 0, skipna = True)
 print(df1.dtypes)
 
